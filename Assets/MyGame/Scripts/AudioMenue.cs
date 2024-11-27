@@ -33,13 +33,12 @@ public class AudioMenue : MonoBehaviour
     {
         // AudioSource.play
         // Spiele die Audio-Source 
-
-        myAudioSource.Play();
+        FindAnyObjectByType<AudioManager>().Play("10-mySound-mhamzic");
     }
 
     public void PauseAudio()
     {
-        myAudioSource.Pause();
+        FindAnyObjectByType<AudioManager>().Pause("10-mySound-mhamzic");
     }
 
     public void StopAudio() { 
