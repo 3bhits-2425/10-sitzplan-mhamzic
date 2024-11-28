@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb547cc47d0e988488002a2e0d2ccdb2, type: 3}
+  m_Name: Semin
+  m_EditorClassIdentifier: 
+  studentName: Semin Sabanovic
+  eyeColor: {r: 0.3301887, g: 0.10289372, b: 0, a: 0}
+  studentImage: {fileID: 21300000, guid: ea03526c70c327447a8fe8d907396fdb, type: 3}
+  studentClip: {fileID: 8300000, guid: 0f03ff50d543f4043b0d3a5f69b1cdad, type: 3}
