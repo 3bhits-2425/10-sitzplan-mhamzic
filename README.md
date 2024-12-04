@@ -17,9 +17,4 @@ Prefab gemacht. Die Tische haben wir dann dynamisch generiert lassen nach Reihen
 # Wo wollen wir
 Projekt fertig machen. Alle Tische und Stuehle dynamisch generieren lassen und nach Sitzplan ordnen.
 
-# Test
-TEST
-=======
-# Wo wollen wir hin
-Projekt fertig machen. Alle Tische und Stuehle dynamisch generieren lassen und nach Sitzplan ordnen.
->>>>>>> 9610b3768219db413d51fdd824ec8f9cee526b87
+![Image (7)](https://github.com/user-attachments/assets/8f00ba90-c432-496d-8d51-9caf7e3e6731)
