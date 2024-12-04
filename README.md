@@ -13,5 +13,5 @@ Jeder Schueler hat auch gewisse Eigenschaften, wie den Namen natuerlich, die Aug
 Nachdem wir unsere Schueler Klasse erstellt haben, haben wir ein 3D Tisch und ein 3D Stuhl erstellt und aus diesen ein 
 Prefab gemacht. Die Tische haben wir dann dynamisch generiert lassen nach Reihen und Spalten. 
 
-# Wo wollen wir
-Projekt fertig machen. Alle Tische und Stuehle dynamisch generieren lassen und nach Sitzplan ordnen. 
+
+Projekt fertig machen. Alle Tische und Stuehle dynamisch generieren lassen und nach Sitzplan ordnen.
