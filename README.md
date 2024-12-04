@@ -20,3 +20,8 @@ Projekt fertig machen. Alle Tische und Stuehle dynamisch generieren lassen und n
 # Skizze vom Projekt: 
 
 ![Image (7)](https://github.com/user-attachments/assets/8f00ba90-c432-496d-8d51-9caf7e3e6731)
+
+
+
+https://github.com/user-attachments/assets/5b523c4e-c0f3-4b4a-86e2-b919cdf8906f
+
