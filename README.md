@@ -14,4 +14,7 @@ Nachdem wir unsere Schueler Klasse erstellt haben, haben wir ein 3D Tisch und ei
 Prefab gemacht. Die Tische haben wir dann dynamisch generiert lassen nach Reihen und Spalten. 
 
 # Wo wollen wir
-Projekt fertig machen. Alle Tische und Stuehle dynamisch generieren lassen und nach Sitzplan ordnen. 
+Projekt fertig machen. Alle Tische und Stuehle dynamisch generieren lassen und nach Sitzplan ordnen.
+
+# Test
+TEST
