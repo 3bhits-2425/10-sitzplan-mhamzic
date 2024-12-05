@@ -20,7 +20,7 @@ public class RoomManager : MonoBehaviour
                 Vector3 tablePosition = new Vector3(col * tableLayout.tableSpaceing, 0,
                     row * tableLayout.tableSpaceing);
 
-                GameObject table = Instantiate(tablePrefab, tablePosition, Quaternion.identity,
+                GameObject  = Instantiate(tablePrefab, tablePosition, Quaternion.identity,
                 transform);
 
                 // Sessel platzieren
