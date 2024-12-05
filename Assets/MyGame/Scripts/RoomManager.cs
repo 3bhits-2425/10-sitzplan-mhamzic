@@ -8,7 +8,7 @@ public class RoomManager : MonoBehaviour
     [SerializeField] private TableLayoutData tableLayout; //Ref zu TableLayout ScriptableObject 
     [SerializeField] private StudentData[] students;
     [SerializeField] private GameObject tablePrefab;
-    [SerializeField] private GameObject chairPrefab; 
+    [SerializeField] private GameObject chairPrefab;
 
 
     void Start()
@@ -17,21 +17,33 @@ public class RoomManager : MonoBehaviour
         {
             for (int col = 0; col < tableLayout.columns; col++)
             {
-                Vector3 tablePosition = new Vector3(col * tableLayout.tableSpaceing, 0, 
+                Vector3 tablePosition = new Vector3(col * tableLayout.tableSpaceing, 0,
                     row * tableLayout.tableSpaceing);
 
                 GameObject table = Instantiate(tablePrefab, tablePosition, Quaternion.identity,
                 transform);
-               
-                //Sessel platzieren 
-                
-            }
-            
-        }
-    }
 
-    void Update()
-    {
-        
+                // Sessel platzieren
+                Transform Position1 = table.transform.Find("Position1");
+                Transform Position2 = table.transform.Find("Position2");
+
+                if (Position1)
+                {
+                    Instantiate(chairPrefab, Position1.position, Position1.rotation, table.transform);
+                }
+
+                if (Position1)
+                {
+                    Instantiate(chairPrefab, Position2.position, Position2.rotation, table.transform);
+
+                }
+
+            }
+        }
+
+        void Update()
+        {
+
+        }
     }
 }
