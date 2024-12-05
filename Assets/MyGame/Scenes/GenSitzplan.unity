@@ -284,7 +284,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2711448671028135532, guid: 77ededf29f059be45841a9f0df95fd79, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1.17
       objectReference: {fileID: 0}
     - target: {fileID: 2711448671028135532, guid: 77ededf29f059be45841a9f0df95fd79, type: 3}
       propertyPath: m_LocalPosition.z
@@ -317,14 +317,6 @@ PrefabInstance:
     - target: {fileID: 2711448671028135532, guid: 77ededf29f059be45841a9f0df95fd79, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5030608159114212932, guid: 77ededf29f059be45841a9f0df95fd79, type: 3}
-      propertyPath: m_TagString
-      value: Chair
-      objectReference: {fileID: 0}
-    - target: {fileID: 8764051737864119162, guid: 77ededf29f059be45841a9f0df95fd79, type: 3}
-      propertyPath: m_TagString
-      value: Chair
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
