@@ -19,7 +19,7 @@ Projekt fertig machen. Alle Tische und Stuehle dynamisch generieren lassen und n
 
 - Prefab erstellen 
 - Audio (Start, Stop, usw.) und Fotos in Projekt verwenden 
-=======
+
 # Wo wollen wir hin
 Projekt fertig machen. Alle Tische und Stuehle dynamisch generieren lassen und nach realen Sitzplan ordnen.
 
