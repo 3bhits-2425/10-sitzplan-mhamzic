@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rows: 4
   columns: 3
-  tableSpaceing: 5
+  tableSpaceing: 6
   chairSpaceing: 3

@@ -4,33 +4,40 @@ using UnityEngine;
 
 public class RoomManager : MonoBehaviour
 {
-
-    [SerializeField] private TableLayoutData tableLayout; //Ref zu TableLayout ScriptableObject 
+    [SerializeField] private TableLayoutData tableLayout;
     [SerializeField] private StudentData[] students;
     [SerializeField] private GameObject tablePrefab;
     [SerializeField] private GameObject chairPrefab;
-
+    [SerializeField] private GameObject schuelerPrefab;
 
     void Start()
     {
+        int createdSchueler = 0;
+
         for (int row = 0; row < tableLayout.rows; row++)
         {
             for (int col = 0; col < tableLayout.columns; col++)
             {
-                Vector3 tablePosition = new Vector3(col * tableLayout.tableSpaceing, 0,
-                    row * tableLayout.tableSpaceing);
+                if (createdSchueler >= students.Length)
+                    return;
 
-                GameObject table = Instantiate(tablePrefab, tablePosition, Quaternion.identity,
-                transform);
+                Vector3 tablePosition = new Vector3(col * tableLayout.tableSpaceing, 0, row * tableLayout.tableSpaceing);
+                GameObject table = Instantiate(tablePrefab, tablePosition, Quaternion.identity, transform);
 
-                // Sessel platzieren
-                Transform[] chairPosition = table.GetComponentsInChildren<Transform>();
-                foreach (Transform chairPos in chairPosition)
+                Transform[] childPositions = table.GetComponentsInChildren<Transform>();
+                foreach (Transform childPos in childPositions)
                 {
-                    if (chairPos.CompareTag("Chair"))
+                    if (createdSchueler >= students.Length)
+                        break;
+
+                    if (childPos.CompareTag("Chair"))
                     {
-                        GameObject chair = Instantiate(chairPrefab,chairPos.position ,chairPos.rotation, table.transform);
-                        Debug.Log("Found Chair");
+                        Instantiate(chairPrefab, childPos.position, childPos.rotation, table.transform);
+                    }
+                    else if (childPos.CompareTag("Schueler"))
+                    {
+                        Instantiate(schuelerPrefab, childPos.position, childPos.rotation, table.transform);
+                        createdSchueler++;
                     }
                 }
             }
