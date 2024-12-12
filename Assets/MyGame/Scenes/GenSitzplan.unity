@@ -176,6 +176,7 @@ MonoBehaviour:
   tablePrefab: {fileID: 937907930765113082, guid: 77ededf29f059be45841a9f0df95fd79, type: 3}
   chairPrefab: {fileID: 7430670083567990749, guid: 0349794196bf3a2489e64eb31785ba5a, type: 3}
   schuelerPrefab: {fileID: 8221553961772579827, guid: c68b22c98833d7d4fa73e1e46e446170, type: 3}
+  chairlist: []
 --- !u!4 &1150831584
 Transform:
   m_ObjectHideFlags: 0

@@ -9,9 +9,11 @@ public class RoomManager : MonoBehaviour
     [SerializeField] private GameObject tablePrefab;
     [SerializeField] private GameObject chairPrefab;
     [SerializeField] private GameObject schuelerPrefab;
+    [SerializeField] private List<GameObject> chairlist; 
 
     void Start()
     {
+        chairlist = new List<GameObject>();
         int createdSchueler = 0;
 
         for (int row = 0; row < tableLayout.rows; row++)
@@ -32,7 +34,8 @@ public class RoomManager : MonoBehaviour
 
                     if (childPos.CompareTag("Chair"))
                     {
-                        Instantiate(chairPrefab, childPos.position, childPos.rotation, table.transform);
+                        GameObject chair = Instantiate(chairPrefab, childPos.position, childPos.rotation, table.transform);
+                        chairlist.Add(chair);
                     }
                     else if (childPos.CompareTag("Schueler"))
                     {

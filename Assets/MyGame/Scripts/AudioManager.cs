@@ -16,7 +16,7 @@ public class AudioManager : MonoBehaviour
         // Stelle sicher, dass nur ein Element vom Typ AudioManager erzeugt werden kann
         if (singleton == null)
         {
-            singleton = this;
+            singleton = this;  
         }
         else
         {
